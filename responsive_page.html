@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Layout */
+.main {
+    display: flex;
+    margin-top: 50px; 
+    height: calc(100vh - 100px); 
+}
+
+/* Left Menu */
+.left-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    cursor: pointer; 
+    position: relative; 
+    z-index: 1; 
+    margin-top: 50px; 
+}
+
+.left-menu.collapsed {
+    width: 50px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+    margin-top: 50px; 
+}
+
+/* Right-Side Panel */
+.right-panel {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px; 
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Example Content Styling */
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">Fixed Navbar</div>
+
+    <!-- Main Layout -->
+    <div class="main">
+        <div class="left-menu" id="leftMenu">Left Menu</div>
+        <div class="content">
+            <h1>Welcome to the Main Content Area</h1>
+            <p>How to Play NYT Connections
+Good work with this fascinating 4×4 words puzzle where 16 words should be arranged in groups of four words each, but the words themselves are interrelated. All these words belong to literature and technology, geographical names and other categories. Beware: However, a couple of the words may appear to be quite obvious for matching, but it is but one answer to all of the given sets. Of course, success will involve frequent critical thinking assessment of available data as well as quite literally analysing obscure patterns. Do your best in this tense game and work through all the problem solving activities below and be a winner in this brain game.</p>
+            <p>Apparently, if you only want to read more words to connect to one another, that is all you require of you: A number of New York Times daily connections. And, of course, that is now merely a typing game (and word builders and any other game which claims to show which words are linked). Below are the changes that the players raised in response to the question of what ideas could be changed in the gameplay and some of the details that I shared with them. This means that as a wordsmith pro, you can begin with nearly any exercise and, actually, begin the workout with an ability you lack. You don’t like to sit at this roulette table below this page. If so, there are answers that you can use when needed. The choice is all yours!</p><br/>
+            <p>Blue: Ice scraper
+
+Purple: Screen Doctors
+
+'If you know what we are talking about, minimize this page and try to solve your puzzle.
+
+ALSO READ| NYT Connections Today: See hints and answers for January 19, 2025
+
+NYT Connections Today: These are categories
+Yellow: PUTDOWN
+
+Green: SMALL LIKENESS
+
+Blue: USED TO CLEAR SNOW
+
+Purple: DOCTORS IN POP CULTURE
+
+Blow the trumpets before we reveal the answer….
+
+NYT Connections Today: Answer for January 21
+PUTDOWN: BARB, CRACK, DIG, SLIGHT
+
+SMALL LIKENESS: DOLL, FIGURE, MINIATURE, MODEL
+
+USED TO CLEAR SNOW: PLOW, SALT, SAND, SHOVEL
+
+DOCTORS IN POP CULTURE: NO, OCTOPUS, PEPPER, WHO</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <p>For her final flight, Harris was supported by an all-female U.S. Air Force crew, operating a C-32 aircraft from Joint Base Andrews to Los Angeles. This marks the first time an all-female crew has flown the C-32 for the U.S. Air Force, per Politico.</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <p>After arriving in Los Angeles, Harris visited areas affected by the devastating wildfires, meeting with volunteers, first responders, and firefighters. Her initial stop was in Altadena, where she joined efforts to distribute meals to fire victims alongside World Central Kitchen, a nonprofit founded by chef José Andrés. Volunteers at the site included some individuals who had lost their own homes to the fires.</p>
+        </div>
+        <div class="right-panel">Right Panel</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Footer</div>
+
+    <script>
+        // JavaScript to collapse the left menu
+        document.getElementById('leftMenu').addEventListener('click', function () {
+            this.classList.toggle('collapsed');
+        });
+
+        // JavaScript for responsive width adjustment
+        function adjustPageWidth() {
+            const width = window.innerWidth;
+            if (width >= 992 && width <= 1600) {
+                document.body.style.transform = 'scale(0.9)';
+            } else if (width >= 700 && width < 992) {
+                document.body.style.transform = 'scale(0.8)';
+            } else if (width >= 600 && width < 700) {
+                document.body.style.transform = 'scale(0.75)';
+            } else if (width <= 600) {
+                document.body.style.transform = 'scale(0.5)';
+            } else {
+                document.body.style.transform = 'scale(1)';
+            }
+        }
+
+        // Add event listeners for screen resize and page load
+        window.addEventListener('resize', adjustPageWidth);
+        window.addEventListener('load', adjustPageWidth);
+    </script>
+</body>
+</html>
