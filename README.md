@@ -172,3 +172,35 @@ Due to limited resources, the application could not be fully deployed. However, 
 
 ---
 
+## Output:
+
+### Chat App
+
+#### Signup:
+![signup](https://github.com/user-attachments/assets/5a4c9e03-380c-4e95-ad8b-22d193a04b7b)
+
+
+#### Login:
+![login](https://github.com/user-attachments/assets/5b176147-4178-40ba-8190-af4ffb67989d)
+
+
+#### Chat:
+![Chat](https://github.com/user-attachments/assets/2753e915-4854-4682-8e0f-705091ffe30e)
+
+
+### Responsive Web Page
+
+#### Responsive Page:
+![responsive](https://github.com/user-attachments/assets/a0af0a9d-bcd4-4369-9dda-a54d12657ca1)
+
+
+### AWS
+
+#### Add Two Numbers:
+![Capture](https://github.com/user-attachments/assets/2d304208-8176-4746-aa1a-248618b69f24)
+
+
+#### Upload PDF to S3 bucket:
+![file_upload](https://github.com/user-attachments/assets/b4f388c1-1c63-44d5-ba52-80b4a1c44d68)
+
+
